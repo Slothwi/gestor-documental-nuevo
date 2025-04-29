@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fafb;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #e2e8f0;
+}
+
+.logo-container {
+    margin-bottom: 2rem;
+}
+
+.upload-button {
+    background-color: #3ccfcf;
+    color: white;
+    font-weight: bold;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.nav a {
+    display: block;
+    margin-bottom: 1rem;
+    color: #2d3748;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.help-box {
+    background: linear-gradient(135deg, #2bc0e4 0%, #eaecc6 100%);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: auto;
+    text-align: center;
+    color: #2d3748;
+    font-size: 0.875rem;
+}
+
+.contact-button {
+    background-color: #0f9d58;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #cbd5e0;
+}
+
+.areas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.area {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #2d3748;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.area span {
+    display: block;
+    font-size: 0.75rem;
+    color: #718096;
+    margin-top: 0.25rem;
+}
+
+  /* Áreas específicas */
+.area.rrhh { background-color: #ffe0e0; color: #c53030; }
+.area.proveedores { background-color: #fff5cc; color: #b7791f; }
+.area.protocolos { background-color: #e6fffa; color: #2c7a7b; }
+.area.clientes { background-color: #e9d8fd; color: #6b46c1; }
+.area.finanzas { background-color: #f0ebff; color: #805ad5; }
+.area.tecnologia { background-color: #c6f6d5; color: #2f855a; }
+.area.admin { background-color: #fffbea; color: #975a16; }
+.area.productos { background-color: #ffe5e5; color: #b83280; }
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.widget {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #2d3748;
+    text-align: center;
+}
