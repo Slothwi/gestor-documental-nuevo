@@ -1,38 +1,12 @@
 'use client';
 
 import React from 'react';
-import './styles.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
     <div className="container">
-      <div className="sidebar">
-        <div className="logo-container">
-          <Image
-            src="/images/australogo.png"
-            alt="Austranet Logo"
-            width={140}
-            height={140}
-            priority
-          />
-        </div>
-        <button className="upload-button">⬆ Subir archivo</button>
-        <nav className="nav">
-          <a href="#">📑 Solicitudes</a>
-          <a href="#">📚 Documentos</a>
-          <a href="#">📁 Carpetas</a>
-          <a href="#">📊 Reportes</a>
-          <a href="#">📦 Mis archivos</a>
-          <a href="#">⚙️ Configuraciones</a>
-          <a href="#">🚪 Cerrar sesión</a>
-        </nav>
-        <div className="help-box">
-          <p>¿Necesitas ayuda?<br />Puedes escribirnos para que te ayudemos en la navegación en el sitio</p>
-          <button className="contact-button">Contactar</button>
-        </div>
-      </div>
-
       <main className="main-content">
         <header className="header">
           <h1>Gestor Documental</h1>

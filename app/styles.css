@@ -16,10 +16,11 @@ body {
     display: flex;
     flex-direction: column;
     border-right: 1px solid #e2e8f0;
+    align-items: center;
 }
 
 .logo-container {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .upload-button {
@@ -129,4 +130,80 @@ body {
     font-size: 1rem;
     color: #2d3748;
     text-align: center;
+}
+
+/* Subir Archivos */
+
+.subir-archivo-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d3748;
+}
+
+.subir-archivo-container h2 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subir-archivo-container form label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.subir-archivo-container form input[type="text"],
+.subir-archivo-container form input[type="file"] {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #2d3748;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.subir-archivo-container form input[type="text"]::placeholder {
+    color: #718096;
+}
+
+.subir-archivo-container form button {
+    width: 100%;
+    background-color: #3ccfcf;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subir-archivo-container form button:hover {
+    background-color: #30b4b4;
+}
+
+.subir-archivo-container p.mensaje {
+    margin-top: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.subir-archivo-container p.mensaje.error {
+    color: #c53030;
+}
+
+.subir-archivo-container p.mensaje.exito {
+    color: #2f855a;
 }

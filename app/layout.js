@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { Inter } from 'next/font/google';
-
+import { Inter } from "next/font/google";
+import "./styles.css";
+import Sidebar from "./components/sidebar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,20 +18,22 @@ export const metadata = {
 };
 
 const inter = Inter({
-  subsets: ['latin'],
-  weight: ['400', '700'], 
-  display: 'swap',  
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
 });
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="container">
+          <Sidebar />
+          <main className="main-content">{children}</main>
+        </div>
       </body>
     </html>
   );
 }
-
-
