@@ -1,209 +1,327 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f9fafb;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9fafb;
 }
 
 .container {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  min-height: 100vh;
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #fff;
-    padding: 1.5rem 1rem;
-    display: flex;
-    flex-direction: column;
-    border-right: 1px solid #e2e8f0;
-    align-items: center;
+  width: 250px;
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e2e8f0;
+  align-items: center;
 }
 
 .logo-container {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .upload-button {
-    background-color: #3ccfcf;
-    color: white;
-    font-weight: bold;
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    margin-bottom: 1.5rem;
-    border: none;
-    cursor: pointer;
+  background-color: #3ccfcf;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: none;
+  cursor: pointer;
 }
 
 .nav a {
-    display: block;
-    margin-bottom: 1rem;
-    color: #2d3748;
-    text-decoration: none;
-    font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+  color: #2d3748;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .help-box {
-    background: linear-gradient(135deg, #2bc0e4 0%, #eaecc6 100%);
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-top: auto;
-    text-align: center;
-    color: #2d3748;
-    font-size: 0.875rem;
+  background: linear-gradient(135deg, #2bc0e4 0%, #eaecc6 100%);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: auto;
+  text-align: center;
+  color: #2d3748;
+  font-size: 0.875rem;
 }
 
 .contact-button {
-    background-color: #0f9d58;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    border-radius: 9999px;
-    font-weight: bold;
-    cursor: pointer;
+  background-color: #0f9d58;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .main-content {
-    flex-grow: 1;
-    padding: 2rem;
+  flex-grow: 1;
+  padding: 2rem;
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .search-input {
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid #cbd5e0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e0;
 }
 
 .areas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .area {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    font-weight: bold;
-    color: #2d3748;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #2d3748;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .area span {
-    display: block;
-    font-size: 0.75rem;
-    color: #718096;
-    margin-top: 0.25rem;
+  display: block;
+  font-size: 0.75rem;
+  color: #718096;
+  margin-top: 0.25rem;
 }
 
-  /* Áreas específicas */
-.area.rrhh { background-color: #ffe0e0; color: #c53030; }
-.area.proveedores { background-color: #fff5cc; color: #b7791f; }
-.area.protocolos { background-color: #e6fffa; color: #2c7a7b; }
-.area.clientes { background-color: #e9d8fd; color: #6b46c1; }
-.area.finanzas { background-color: #f0ebff; color: #805ad5; }
-.area.tecnologia { background-color: #c6f6d5; color: #2f855a; }
-.area.admin { background-color: #fffbea; color: #975a16; }
-.area.productos { background-color: #ffe5e5; color: #b83280; }
+/* Áreas específicas */
+.area.rrhh {
+  background-color: #ffe0e0;
+  color: #c53030;
+}
+.area.proveedores {
+  background-color: #fff5cc;
+  color: #b7791f;
+}
+.area.protocolos {
+  background-color: #e6fffa;
+  color: #2c7a7b;
+}
+.area.clientes {
+  background-color: #e9d8fd;
+  color: #6b46c1;
+}
+.area.finanzas {
+  background-color: #f0ebff;
+  color: #805ad5;
+}
+.area.tecnologia {
+  background-color: #c6f6d5;
+  color: #2f855a;
+}
+.area.admin {
+  background-color: #fffbea;
+  color: #975a16;
+}
+.area.productos {
+  background-color: #ffe5e5;
+  color: #b83280;
+}
 
 .widgets {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
 .widget {
-    background-color: white;
-    border-radius: 1rem;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    padding: 1.5rem;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #2d3748;
-    text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2d3748;
+  text-align: center;
 }
 
 /* Subir Archivos */
 
 .subir-archivo-container {
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 1.5rem;
-    background-color: #fff;
-    border-radius: 1rem;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-    font-family: 'Segoe UI', sans-serif;
-    color: #2d3748;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  font-family: "Segoe UI", sans-serif;
+  color: #2d3748;
 }
 
 .subir-archivo-container h2 {
-    margin-bottom: 1rem;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .subir-archivo-container form label {
-    display: block;
-    margin-bottom: 0.75rem;
-    font-weight: 600;
-    font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .subir-archivo-container form input[type="text"],
 .subir-archivo-container form input[type="file"] {
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    border: 1px solid #cbd5e0;
-    border-radius: 0.5rem;
-    font-size: 1rem;
-    color: #2d3748;
-    font-family: inherit;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #2d3748;
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 .subir-archivo-container form input[type="text"]::placeholder {
-    color: #718096;
+  color: #718096;
 }
 
 .subir-archivo-container form button {
-    width: 100%;
-    background-color: #3ccfcf;
-    color: white;
-    font-weight: 700;
-    padding: 0.75rem 0;
-    border: none;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  background-color: #3ccfcf;
+  color: white;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .subir-archivo-container form button:hover {
-    background-color: #30b4b4;
+  background-color: #30b4b4;
 }
 
 .subir-archivo-container p.mensaje {
-    margin-top: 1rem;
-    font-weight: 600;
-    text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 .subir-archivo-container p.mensaje.error {
-    color: #c53030;
+  color: #c53030;
 }
 
 .subir-archivo-container p.mensaje.exito {
-    color: #2f855a;
+  color: #2f855a;
+}
+
+/* Estilos Solicitudes */
+
+.filtros {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.solicitudes-lista table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.solicitudes-lista th,
+.solicitudes-lista td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.solicitudes-lista th {
+  background-color: #f7fafc;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.solicitudes-lista tr:last-child td {
+  border-bottom: none;
+}
+
+.estado {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: white;
+  display: inline-block;
+  min-width: 80px;
+  text-align: center;
+}
+
+.estado-pendiente {
+  background-color: #d69e2e;
+}
+
+.estado-aprobada {
+  background-color: #2f855a;
+}
+
+.estado-rechazada {
+  background-color: #c53030;
+}
+
+.solicitudes-lista button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.btn-ver {
+  color: #3182ce;
+}
+
+.btn-ver:hover {
+  background-color: #ebf8ff;
+}
+
+.btn-aprobar {
+  color: #2f855a;
+}
+
+.btn-aprobar:hover {
+  background-color: #c6f6d5;
+}
+
+.btn-rechazar {
+  color: #c53030;
+}
+
+.btn-rechazar:hover {
+  background-color: #fed7d7;
 }
